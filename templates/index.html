@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso de Dimensiones</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    form { margin: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Ingrese las dimensiones de las matrices</h1>
+  <form action="/crear" method="post">
+    <label for="filas">Número de filas:</label>
+    <input type="number" id="filas" name="filas" min="1" required>
+    <br><br>
+    <label for="columnas">Número de columnas:</label>
+    <input type="number" id="columnas" name="columnas" min="1" required>
+    <br><br>
+    <input type="submit" value="Enviar dimensiones">
+  </form>
+</body>
+</html>

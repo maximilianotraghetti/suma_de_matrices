@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado de la Suma</title>
+  <style>
+    table { border-collapse: collapse; margin-bottom: 20px; }
+    td { border: 1px solid #000; padding: 5px; text-align: center; }
+    body { font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <h1>Resultado de la Suma</h1>
+  <table>
+    {% for fila in resultado %}
+    <tr>
+      {% for valor in fila %}
+      <td>{{ valor }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/">Volver al inicio</a>
+</body>
+</html>
